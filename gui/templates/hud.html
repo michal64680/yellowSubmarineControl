@@ -1,141 +1,199 @@
 <!doctype html>
 
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/static/app.css">
-    <title>YellowSubmarine HUD</title>
-  </head>
-  <body>
-    <img src="{{url_for('video_feed')}}" class="camera" alt="camera image">
-    <div class="container">
-      <div class="metadata darkened">
-        <div class="title">
-          Yellow Submarine
-        </div>
-        <div class="mark">
-          Front Cam
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/app.css">
+  <title>YellowSubmarine HUD</title>
+</head>
+
+<body>
+  <img src="">
+  <div class="container">
+    <div class="metadata darkened">
+      <div class="title">
+        Yellow Submarine
+      </div>
+      <div class="mark">
+        Front Cam
+      </div>
+    </div>
+    <div class="left-margin">
+      <div class="logs darkened">
+        <ul>
+          <li class="warning">[13:01:23] Info that something bad may happen soon Info that something bad may happen soon
+            Info that something bad may happen soon</li>
+          <li>[12:33:52] Yet another normal info</li>
+          <li>[12:32:53] Normal info</li>
+          <li class="error">[12:25:22] Info about something really bad</li>
+          <li>[12:10:59] Other normal info</li>
+          <li>[12:10:21] Normal info</li>
+
+          <li class="warning">[13:01:23] Info that something bad may happen soon</li>
+          <li>[12:33:52] Yet another normal info</li>
+          <li>[12:32:53] Normal info</li>
+          <li class="error">[12:25:22] Info about something really bad</li>
+          <li>[12:10:59] Other normal info</li>
+          <li>[12:10:21] Normal info</li>
+
+          <li class="warning">[13:01:23] Info that something bad may happen soon</li>
+          <li>[12:33:52] Yet another normal info</li>
+          <li>[12:32:53] Normal info</li>
+          <li class="error">[12:25:22] Info about something really bad</li>
+          <li>[12:10:59] Other normal info</li>
+          <li>[12:10:21] Normal info</li>
+
+          <li class="warning">[13:01:23] Info that something bad may happen soon</li>
+          <li>[12:33:52] Yet another normal info</li>
+          <li>[12:32:53] Normal info</li>
+          <li class="error">[12:25:22] Info about something really bad</li>
+          <li>[12:10:59] Other normal info</li>
+          <li>[12:10:21] Normal info</li>
+
+          <li class="warning">[13:01:23] Info that something bad may happen soon</li>
+          <li>[12:33:52] Yet another normal info</li>
+          <li>[12:32:53] Normal info</li>
+          <li class="error">[12:25:22] Info about something really bad</li>
+          <li>[12:10:59] Other normal info</li>
+          <li>[12:10:21] Normal info</li>
+
+          <li class="warning">[13:01:23] Info that something bad may happen soon</li>
+          <li>[12:33:52] Yet another normal info</li>
+          <li>[12:32:53] Normal info</li>
+          <li class="error">[12:25:22] Info about something really bad</li>
+          <li>[12:10:59] Other normal info</li>
+          <li>[12:10:21] Normal info</li>
+
+          <li class="warning">[13:01:23] Info that something bad may happen soon</li>
+          <li>[12:33:52] Yet another normal info</li>
+          <li>[12:32:53] Normal info</li>
+          <li class="error">[12:25:22] Info about something really bad</li>
+          <li>[12:10:59] Other normal info</li>
+          <li>[12:10:21] Normal info</li>
+
+          <li class="warning">[13:01:23] Info that something bad may happen soon</li>
+          <li>[12:33:52] Yet another normal info</li>
+          <li>[12:32:53] Normal info</li>
+          <li class="error">[12:25:22] Info about something really bad</li>
+          <li>[12:10:59] Other normal info</li>
+          <li>[12:10:21] Normal info</li>
+
+          <li class="warning">[13:01:23] Info that something bad may happen soon</li>
+          <li>[12:33:52] Yet another normal info</li>
+          <li>[12:32:53] Normal info</li>
+          <li class="error">[12:25:22] Info about something really bad</li>
+          <li>[12:10:59] Other normal info</li>
+          <li>[12:10:21] Normal info</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hud-center">
+      <div class="yaw-box">
+        <div class="yaw-scale">
+          <img src="/static/yawScale.svg">
+          <span>^</span>
+          <span class="precise-yaw-value">-85.4&deg;</span>
         </div>
       </div>
-      <div class="left-margin">
-        <div class="logs darkened">
-          <ul>
-            <li class="warning">[13:01:23] Info that something bad may happen soon Info that something bad may happen soon Info that something bad may happen soon</li>
-            <li>[12:33:52] Yet another normal info</li>
-            <li>[12:32:53] Normal info</li>
-            <li class="error">[12:25:22] Info about something really bad</li>
-            <li>[12:10:59] Other normal info</li>
-            <li>[12:10:21] Normal info</li>
-
-            <li class="warning">[13:01:23] Info that something bad may happen soon</li>
-            <li>[12:33:52] Yet another normal info</li>
-            <li>[12:32:53] Normal info</li>
-            <li class="error">[12:25:22] Info about something really bad</li>
-            <li>[12:10:59] Other normal info</li>
-            <li>[12:10:21] Normal info</li>
-
-            <li class="warning">[13:01:23] Info that something bad may happen soon</li>
-            <li>[12:33:52] Yet another normal info</li>
-            <li>[12:32:53] Normal info</li>
-            <li class="error">[12:25:22] Info about something really bad</li>
-            <li>[12:10:59] Other normal info</li>
-            <li>[12:10:21] Normal info</li>
-
-            <li class="warning">[13:01:23] Info that something bad may happen soon</li>
-            <li>[12:33:52] Yet another normal info</li>
-            <li>[12:32:53] Normal info</li>
-            <li class="error">[12:25:22] Info about something really bad</li>
-            <li>[12:10:59] Other normal info</li>
-            <li>[12:10:21] Normal info</li>
-
-            <li class="warning">[13:01:23] Info that something bad may happen soon</li>
-            <li>[12:33:52] Yet another normal info</li>
-            <li>[12:32:53] Normal info</li>
-            <li class="error">[12:25:22] Info about something really bad</li>
-            <li>[12:10:59] Other normal info</li>
-            <li>[12:10:21] Normal info</li>
-
-            <li class="warning">[13:01:23] Info that something bad may happen soon</li>
-            <li>[12:33:52] Yet another normal info</li>
-            <li>[12:32:53] Normal info</li>
-            <li class="error">[12:25:22] Info about something really bad</li>
-            <li>[12:10:59] Other normal info</li>
-            <li>[12:10:21] Normal info</li>
-
-            <li class="warning">[13:01:23] Info that something bad may happen soon</li>
-            <li>[12:33:52] Yet another normal info</li>
-            <li>[12:32:53] Normal info</li>
-            <li class="error">[12:25:22] Info about something really bad</li>
-            <li>[12:10:59] Other normal info</li>
-            <li>[12:10:21] Normal info</li>
-
-            <li class="warning">[13:01:23] Info that something bad may happen soon</li>
-            <li>[12:33:52] Yet another normal info</li>
-            <li>[12:32:53] Normal info</li>
-            <li class="error">[12:25:22] Info about something really bad</li>
-            <li>[12:10:59] Other normal info</li>
-            <li>[12:10:21] Normal info</li>
-
-            <li class="warning">[13:01:23] Info that something bad may happen soon</li>
-            <li>[12:33:52] Yet another normal info</li>
-            <li>[12:32:53] Normal info</li>
-            <li class="error">[12:25:22] Info about something really bad</li>
-            <li>[12:10:59] Other normal info</li>
-            <li>[12:10:21] Normal info</li>
-          </ul>
-        </div>
-      </div>
-      <div class="hud-center">
-        <div class="yaw-box">
-          <div class="yaw-scale">
-            <img src="/static/yawScale.svg">
-            <span>^</span>
-            <span class="precise-yaw-value">-85.4&deg;</span>
-          </div>
-        </div>
-        <div class="pitch-box">
-          <div class="pitch-scale">
-            <img src="/static/pitchScale.svg">
-            <span class="precise-pitch-value">< -77.5&deg;</span>
-          </div>
-        </div>
-      </div>
-      <div class="right-margin">
-        <div class="params darkened">
-          <ul>
-            <li>Depth: 30cm</li>
-            <li>Speed: 30m/h</li>
-            <li>Pressure: 2kPa</li>
-            <li></li>
-          </ul>
-          <ul>
-            <li>L Temperature: 20</li>
-            <li>L Humidity: 10%</li>
-            <li></li>
-          </ul>
-          <ul>
-            <li>C Temperature: 20</li>
-            <li>C Humidity: 10%</li>
-            <li></li>
-          </ul>
-          <ul>
-            <li>R Temperature: 20</li>
-            <li>R Humidity: 10%</li>
-            <li></li>
-          </ul>
-          <ul>
-            <li>DC RPM: 1200</li>
-            <li>S RPM: 5</li>
-          </ul>
-        </div>
-        <div class="compass darkened roll-scale">
-          <span class="precise-roll-value">-18&deg;</span>
-          <img src="/static/target.svg" class="roll-mark">
+      <div class="pitch-box">
+        <div class="pitch-scale">
+          <img src="/static/pitchScale.svg">
+          <span class="precise-pitch-value"> -77.5&deg;</span>
         </div>
       </div>
     </div>
-    <script src="/static/app.js"></script>
-  </body>
+    <div class="right-margin">
+      <div class="params darkened">
+        <ul>
+          <li>Speed: 30m/h</li>
+          <li>Pressure: 2kPa</li>
+          <li></li>
+        </ul>
+        <ul>
+          <li>L Temperature: 20</li>
+          <li>L Humidity: 10%</li>
+          <li></li>
+        </ul>
+        <ul>
+          <li>C Temperature: <span id="c_temp"></span></li>
+          <li>C Humidity: 10%</li>
+          <li></li>
+        </ul>
+        <ul>
+          <li>R Temperature: 20</li>
+          <li>R Humidity: 10%</li>
+          <li></li>
+        </ul>
+        <ul>
+          <li>DC RPM: 1200</li>
+          <li>S RPM: 5</li>
+        </ul>
+      </div>
+
+      <div class="right-margin-down">
+        <button class="myButton" id="myButton" onClick="toggleText(this.id); ">Start</button>
+      </div>
+      <div class="right-margin-down">
+        <p class="text-heading darkened">Choose motor:</p>
+        <div class="flipswitch">
+          <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
+          <label class="flipswitch-label" for="fs">
+            <div class="flipswitch-inner"></div>
+            <div class="flipswitch-switch"></div>
+          </label>
+        </div>
+      </div>
+      <div class="range-slider-js">
+        <p class="text-heading darkened">Choose speed: </p>
+        <input class="speed" type="range" id="speed" name="speed" min="0" max="16" step="1" value=8 list="tickmarks">
+        <label for="speed" id="value_speed" class="value_speed text-heading darkened">8 m/s</label>
+
+
+        <!-- <datalist id="tickmarks" class="list-speed">
+          <option value="0" label="0%"></option>
+          
+          <option value="8" label="50%"></option>
+          
+          <option value="16" label="100%"></option>
+          </datalist>-->
+      </div>
+
+      <div class="position-button-array">
+        <p class="text-heading darkened">Directions of movement: </p>
+        <div class="position-button">
+          <button class="button">
+            <div class="button__arrow button__arrow--up"></div>
+            Up
+          </button>
+        </div>
+        <div class="position-button-left-right">
+
+          <button class="button">
+            <div class="button__arrow button__arrow--left"></div>
+            Left
+          </button>
+          <button class="button">
+            Right
+            <div class="button__arrow button__arrow--right"></div>
+
+          </button>
+        </div>
+        <div class="position-button">
+          <button class="button">
+            <div class="button__arrow button__arrow--down"></div>
+            Down
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script> 
+  var data_from_sensors = new EventSource("{{ url_for('data_from_sensors') }}");
+  </script>
+  <script src="static/app.js"></script>
+</body>
+
 </html>
